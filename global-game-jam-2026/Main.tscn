@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bf0kw1i40ta5p" path="res://sprites/greyBack.png" id="1_r0du0"]
 [ext_resource type="PackedScene" uid="uid://bh44l75vosadi" path="res://page.tscn" id="2_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://bnfec2dsmvb65" path="res://cipher.tscn" id="3_r0du0"]
 
 [node name="Node2D" type="Node2D" unique_id=213973660]
 
@@ -12,4 +13,10 @@ texture = ExtResource("1_r0du0")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=56275216]
 
-[node name="Page" parent="CanvasLayer" unique_id=2112670791 instance=ExtResource("2_uu6xs")]
+[node name="Page" parent="CanvasLayer" unique_id=1737315704 instance=ExtResource("2_uu6xs")]
+
+[node name="Cipher" parent="CanvasLayer" unique_id=1998514351 instance=ExtResource("3_r0du0")]
+offset_left = 533.0
+offset_top = 108.0
+offset_right = 933.0
+offset_bottom = 608.0

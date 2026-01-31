@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bo1w7k3tfq0dy" path="res://drag_panel_container.gd" id="1_wks1n"]
 [ext_resource type="Texture2D" uid="uid://c0tydc4b7i6ie" path="res://sprites/page.png" id="2_xgv5c"]
 
-[node name="Page" type="PanelContainer" unique_id=2112670791]
+[node name="Page" type="PanelContainer" unique_id=1737315704]
 offset_left = 47.0
 offset_top = 54.0
 offset_right = 447.0

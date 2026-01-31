@@ -1,4 +1,4 @@
-extends PanelContainer
+extends Container
 
 var button_pressed:bool = false
 var previous_mouse_position:Vector2 = Vector2.ZERO
@@ -20,6 +20,7 @@ func _process(delta: float) -> void:
 
 func _on_drag_button_button_down() -> void:
 	button_pressed = true
+	print(name)
 	previous_mouse_position = get_viewport().get_mouse_position()
 
 
