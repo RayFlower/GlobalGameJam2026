@@ -1,22 +1,30 @@
 [gd_scene format=3 uid="uid://dsfgegj3h1gbt"]
 
 [ext_resource type="Texture2D" uid="uid://bf0kw1i40ta5p" path="res://sprites/greyBack.png" id="1_r0du0"]
+[ext_resource type="Script" uid="uid://baldktaqjc5eb" path="res://draggable_area.gd" id="2_cm0pq"]
 [ext_resource type="PackedScene" uid="uid://bh44l75vosadi" path="res://page.tscn" id="2_uu6xs"]
 [ext_resource type="PackedScene" uid="uid://bnfec2dsmvb65" path="res://cipher.tscn" id="3_r0du0"]
 
 [node name="Node2D" type="Node2D" unique_id=213973660]
 
 [node name="Background" type="TextureRect" parent="." unique_id=1550174734]
-offset_right = 1156.0
-offset_bottom = 660.0
+offset_left = -45.0
+offset_top = -37.0
+offset_right = 1634.0
+offset_bottom = 934.0
 texture = ExtResource("1_r0du0")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=56275216]
+[node name="DraggableArea" type="CanvasLayer" parent="." unique_id=56275216]
+script = ExtResource("2_cm0pq")
 
-[node name="Page" parent="CanvasLayer" unique_id=1737315704 instance=ExtResource("2_uu6xs")]
+[node name="Page" parent="DraggableArea" unique_id=1737315704 instance=ExtResource("2_uu6xs")]
+offset_left = 252.0
+offset_top = 283.0
+offset_right = 652.0
+offset_bottom = 783.0
 
-[node name="Cipher" parent="CanvasLayer" unique_id=1998514351 instance=ExtResource("3_r0du0")]
-offset_left = 533.0
-offset_top = 108.0
-offset_right = 933.0
-offset_bottom = 608.0
+[node name="Cipher" parent="DraggableArea" unique_id=1998514351 instance=ExtResource("3_r0du0")]
+offset_left = 817.0
+offset_top = 203.0
+offset_right = 1217.0
+offset_bottom = 703.0

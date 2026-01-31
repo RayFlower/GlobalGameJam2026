@@ -3,10 +3,11 @@ extends Container
 var button_pressed:bool = false
 var previous_mouse_position:Vector2 = Vector2.ZERO
 
+signal on_drag_start
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -15,13 +16,11 @@ func _process(delta: float) -> void:
 		var mouse_delta = current_mouse_position - previous_mouse_position
 		position += mouse_delta
 		previous_mouse_position = current_mouse_position
-	
-
 
 func _on_drag_button_button_down() -> void:
 	button_pressed = true
-	print(name)
 	previous_mouse_position = get_viewport().get_mouse_position()
+	on_drag_start.emit(self)
 
 
 func _on_drag_button_button_up() -> void:
