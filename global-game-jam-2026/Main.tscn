@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dsfgegj3h1gbt"]
+
+[ext_resource type="Texture2D" uid="uid://bf0kw1i40ta5p" path="res://sprites/greyBack.png" id="1_r0du0"]
+[ext_resource type="PackedScene" uid="uid://bh44l75vosadi" path="res://page.tscn" id="2_uu6xs"]
+
+[node name="Node2D" type="Node2D" unique_id=213973660]
+
+[node name="Background" type="TextureRect" parent="." unique_id=1550174734]
+offset_right = 1156.0
+offset_bottom = 660.0
+texture = ExtResource("1_r0du0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=56275216]
+
+[node name="Page" parent="CanvasLayer" unique_id=2112670791 instance=ExtResource("2_uu6xs")]
