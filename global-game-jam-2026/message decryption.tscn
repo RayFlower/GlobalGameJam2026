@@ -1,0 +1,206 @@
+[gd_scene format=3 uid="uid://br5xvluqqkgn6"]
+
+[ext_resource type="Script" uid="uid://cq8o18mysxij0" path="res://message_decryption.gd" id="1_c1ndw"]
+[ext_resource type="Texture2D" uid="uid://w6u05maj575x" path="res://sprites/Arrow.png" id="1_e6yom"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1ndw"]
+bg_color = Color(1, 1, 0.9607843, 1)
+
+[node name="MessageDecryption" type="Node2D" unique_id=1789110642]
+script = ExtResource("1_c1ndw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1282480846]
+offset_right = 480.0
+offset_bottom = 1080.0
+color = Color(0.4627451, 0.4, 0.4627451, 1)
+
+[node name="Cipher Selection 1" type="Control" parent="." unique_id=1224653324]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 220.0
+offset_top = 585.0
+offset_right = 260.0
+offset_bottom = 625.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Cipher Selection 1" unique_id=1810118025]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.5
+offset_top = -47.0
+offset_right = 160.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.52156866, 0.6627451, 1)
+
+[node name="Cipher Text" type="RichTextLabel" parent="Cipher Selection 1" unique_id=331366364]
+layout_mode = 0
+offset_left = -133.0
+offset_top = -25.0
+offset_right = 174.0
+offset_bottom = 62.0
+theme_override_font_sizes/normal_font_size = 36
+text = "Hewwo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button Previous" type="Button" parent="Cipher Selection 1" unique_id=709610232]
+layout_mode = 0
+offset_left = -206.0
+offset_top = -12.0
+offset_right = 2.0
+offset_bottom = 196.0
+scale = Vector2(0.3, 0.3)
+icon = ExtResource("1_e6yom")
+icon_alignment = 1
+
+[node name="Button Next" type="Button" parent="Cipher Selection 1" unique_id=908772411]
+layout_mode = 0
+offset_left = 248.0
+offset_top = -12.0
+offset_right = 456.0
+offset_bottom = 196.0
+scale = Vector2(-0.3, 0.3)
+icon = ExtResource("1_e6yom")
+icon_alignment = 1
+
+[node name="Cipher Selection 2" type="Control" parent="." unique_id=2072465526]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 220.0
+offset_top = 693.0
+offset_right = 260.0
+offset_bottom = 733.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Cipher Selection 2" unique_id=475695209]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.5
+offset_top = -47.0
+offset_right = 160.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.52156866, 0.6627451, 1)
+
+[node name="Cipher Text" type="RichTextLabel" parent="Cipher Selection 2" unique_id=819715969]
+layout_mode = 0
+offset_left = -133.0
+offset_top = -25.0
+offset_right = 174.0
+offset_bottom = 62.0
+theme_override_font_sizes/normal_font_size = 36
+text = "OwO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button Previous" type="Button" parent="Cipher Selection 2" unique_id=2037376173]
+layout_mode = 0
+offset_left = -206.0
+offset_top = -12.0
+offset_right = 2.0
+offset_bottom = 196.0
+scale = Vector2(0.3, 0.3)
+icon = ExtResource("1_e6yom")
+icon_alignment = 1
+
+[node name="Button Next" type="Button" parent="Cipher Selection 2" unique_id=1276884600]
+layout_mode = 0
+offset_left = 248.0
+offset_top = -12.0
+offset_right = 456.0
+offset_bottom = 196.0
+scale = Vector2(-0.3, 0.3)
+icon = ExtResource("1_e6yom")
+icon_alignment = 1
+
+[node name="Cipher Selection 3" type="Control" parent="." unique_id=786633919]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 220.0
+offset_top = 800.0
+offset_right = 260.0
+offset_bottom = 840.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Cipher Selection 3" unique_id=94508672]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.5
+offset_top = -47.0
+offset_right = 160.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.52156866, 0.6627451, 1)
+
+[node name="Cipher Text" type="RichTextLabel" parent="Cipher Selection 3" unique_id=535254606]
+layout_mode = 0
+offset_left = -133.0
+offset_top = -25.0
+offset_right = 174.0
+offset_bottom = 62.0
+theme_override_font_sizes/normal_font_size = 36
+text = "What's this?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button Previous" type="Button" parent="Cipher Selection 3" unique_id=1912827065]
+layout_mode = 0
+offset_left = -206.0
+offset_top = -12.0
+offset_right = 2.0
+offset_bottom = 196.0
+scale = Vector2(0.3, 0.3)
+icon = ExtResource("1_e6yom")
+icon_alignment = 1
+
+[node name="Button Next" type="Button" parent="Cipher Selection 3" unique_id=400310847]
+layout_mode = 0
+offset_left = 248.0
+offset_top = -12.0
+offset_right = 456.0
+offset_bottom = 196.0
+scale = Vector2(-0.3, 0.3)
+icon = ExtResource("1_e6yom")
+icon_alignment = 1
+
+[node name="Send Button" type="Button" parent="." unique_id=765304787]
+offset_left = 79.0
+offset_top = 939.0
+offset_right = 400.0
+offset_bottom = 1033.0
+theme_override_colors/font_color = Color(0, 0.13725491, 0.14117648, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_c1ndw")
+text = "Send"
+icon_alignment = 1
