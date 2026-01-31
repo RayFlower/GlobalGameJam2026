@@ -8,9 +8,8 @@
 [ext_resource type="Resource" uid="uid://dcps887lnpp2o" path="res://puzzle_data/puzzle1.tres" id="3_lgr22"]
 [ext_resource type="PackedScene" uid="uid://bnfec2dsmvb65" path="res://cipher.tscn" id="3_r0du0"]
 
-[node name="Game" type="Node2D" unique_id=213973660 node_paths=PackedStringArray("draggable_area")]
+[node name="Game" type="Node2D" unique_id=213973660]
 script = ExtResource("1_fos0i")
-draggable_area = NodePath("DraggableArea")
 puzzle_data = Array[Resource]([ExtResource("2_3dxm6"), ExtResource("3_lgr22")])
 
 [node name="Background" type="TextureRect" parent="." unique_id=1550174734]
@@ -46,22 +45,3 @@ offset_left = 945.0
 offset_top = 397.0
 offset_right = 1345.0
 offset_bottom = 897.0
-
-[node name="BryanTestUI" type="CanvasLayer" parent="." unique_id=628016387]
-
-[node name="AnswerCorrectDebugButton" type="Button" parent="BryanTestUI" unique_id=268684266]
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -156.0
-offset_top = -15.5
-offset_bottom = 15.5
-grow_horizontal = 0
-grow_vertical = 2
-theme_override_font_sizes/font_size = 24
-text = "Answer 1 correctly!
-"
-
-[connection signal="button_down" from="BryanTestUI/AnswerCorrectDebugButton" to="." method="_on_answer_correct_debug_button_down"]

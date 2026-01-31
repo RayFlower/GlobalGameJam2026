@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PuzzleResource" format=3 uid="uid://dcps887lnpp2o"]
+
+[ext_resource type="Script" uid="uid://dxj03134avc2p" path="res://puzzle_resource.gd" id="1_8s1cu"]
+
+[resource]
+script = ExtResource("1_8s1cu")
+question_text = "Second Question"
+answer_texts = Array[String](["human", "bees", "test"])
+pages_to_reveal = Array[String](["Page2", "Cipher2"])
+metadata/_custom_type_script = "uid://dxj03134avc2p"
