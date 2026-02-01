@@ -7,6 +7,6 @@
 [resource]
 script = ExtResource("1_8s1cu")
 question_text = "Second Question"
-all_comma_seperated_answer_texts = Array[String](["microfilm, briefcase, stuffed animal", "under bench, behind tree, one the roof", "south entrance, sand pit, north exit"])
+all_comma_seperated_answer_texts = Array[String](["microfilm, briefcase, stuffed animal", "under bench, behind tree, on the roof", "south entrance, sand pit, north exit"])
 page_textures = Array[Texture2D]([ExtResource("1_gxyla"), ExtResource("2_srufq")])
 metadata/_custom_type_script = "uid://dxj03134avc2p"
