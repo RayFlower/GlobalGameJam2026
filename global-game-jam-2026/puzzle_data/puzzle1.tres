@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="PuzzleResource" format=3 uid="uid://dcps887lnpp2o"]
 
-[ext_resource type="Script" uid="uid://dxj03134avc2p" path="res://puzzle_resource.gd" id="1_8s1cu"]
+[ext_resource type="Script" path="res://puzzle_resource.gd" id="1_8s1cu"]
 [ext_resource type="Texture2D" uid="uid://2x32ebsux88d" path="res://sprites/Level1_cypher.png" id="1_gxyla"]
 [ext_resource type="Texture2D" uid="uid://btg3cf40y17m2" path="res://sprites/Level1_note.png" id="2_srufq"]
 
