@@ -1,15 +1,26 @@
 [gd_scene format=3 uid="uid://cqj2rek50my0d"]
 
 [ext_resource type="Script" uid="uid://rn3iu83c70g" path="res://intro_screen.gd" id="1_fmp77"]
+[ext_resource type="Texture2D" uid="uid://bh53b6hnrk836" path="res://sprites/main menu BG.png" id="2_0nf3h"]
+[ext_resource type="Texture2D" uid="uid://c12ocudtnuift" path="res://sprites/main menu BG_cypher.png" id="2_2s5ah"]
 [ext_resource type="FontFile" uid="uid://cuoopbmw7k53t" path="res://Fonts/moms_typewriter/Mom«t___.ttf" id="2_t3076"]
 [ext_resource type="FontFile" uid="uid://btyoule5c6fw3" path="res://Fonts/oldnewspapertypes/OldNewspaperTypes.ttf" id="3_yrerf"]
 [ext_resource type="AudioStream" uid="uid://h0jeoqdqbie" path="res://music/hauntedorganbackground.wav" id="4_yrerf"]
 [ext_resource type="AudioStream" uid="uid://j8s130n7bejc" path="res://SFX/soclicky.wav" id="5_augpl"]
+[ext_resource type="Script" uid="uid://baldktaqjc5eb" path="res://draggable_area.gd" id="7_2s5ah"]
 
-[node name="IntroScreen" type="Node2D" unique_id=686284399]
+[node name="IntroScreen" type="Node2D" unique_id=686284399 node_paths=PackedStringArray("draggable_area")]
 script = ExtResource("1_fmp77")
+draggable_area = NodePath("CanvasLayer")
+main_menu_cypher_texture = ExtResource("2_2s5ah")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2465077]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_0nf3h")
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=1342510750]
+visible = false
 offset_left = 347.0
 offset_top = 247.0
 offset_right = 1588.0
@@ -21,10 +32,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Start Button" type="Button" parent="." unique_id=1707609753]
-offset_left = 712.0
-offset_top = 722.0
-offset_right = 1254.0
-offset_bottom = 839.0
+offset_left = 1252.0
+offset_top = 617.0
+offset_right = 1794.0
+offset_bottom = 734.0
 theme_override_fonts/font = ExtResource("3_yrerf")
 theme_override_font_sizes/font_size = 48
 text = "Start Decrypting"
@@ -36,5 +47,8 @@ autoplay = true
 
 [node name="Click SFX" type="AudioStreamPlayer" parent="." unique_id=682411894]
 stream = ExtResource("5_augpl")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=634771220]
+script = ExtResource("7_2s5ah")
 
 [connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
