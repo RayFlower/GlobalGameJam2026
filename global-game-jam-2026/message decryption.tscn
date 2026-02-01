@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cq8o18mysxij0" path="res://message_decryption.gd" id="1_c1ndw"]
 [ext_resource type="Texture2D" uid="uid://w6u05maj575x" path="res://sprites/Arrow.png" id="1_e6yom"]
+[ext_resource type="FontFile" uid="uid://btyoule5c6fw3" path="res://Fonts/oldnewspapertypes/OldNewspaperTypes.ttf" id="2_c0gml"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1ndw"]
 bg_color = Color(1, 1, 0.9607843, 1)
@@ -49,6 +50,7 @@ offset_left = -133.0
 offset_top = -25.0
 offset_right = 174.0
 offset_bottom = 62.0
+theme_override_fonts/normal_font = ExtResource("2_c0gml")
 theme_override_font_sizes/normal_font_size = 36
 text = "Hewwo"
 horizontal_alignment = 1
@@ -109,6 +111,7 @@ offset_left = -133.0
 offset_top = -25.0
 offset_right = 174.0
 offset_bottom = 62.0
+theme_override_fonts/normal_font = ExtResource("2_c0gml")
 theme_override_font_sizes/normal_font_size = 36
 text = "OwO"
 horizontal_alignment = 1
@@ -169,6 +172,7 @@ offset_left = -133.0
 offset_top = -25.0
 offset_right = 174.0
 offset_bottom = 62.0
+theme_override_fonts/normal_font = ExtResource("2_c0gml")
 theme_override_font_sizes/normal_font_size = 36
 text = "What's this?"
 horizontal_alignment = 1
@@ -200,6 +204,7 @@ offset_top = 939.0
 offset_right = 400.0
 offset_bottom = 1033.0
 theme_override_colors/font_color = Color(0, 0.13725491, 0.14117648, 1)
+theme_override_fonts/font = ExtResource("2_c0gml")
 theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxFlat_c1ndw")
 text = "Send"
