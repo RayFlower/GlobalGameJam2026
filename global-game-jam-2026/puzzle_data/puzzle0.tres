@@ -7,6 +7,6 @@
 [resource]
 script = ExtResource("1_e46jj")
 question_text = "What are they doing?"
-answer_texts = Array[String](["shake", "proud"])
+all_comma_seperated_answer_texts = Array[String](["test, ball, sandwich", "passed, failed, delayed"])
 page_textures = Array[Texture2D]([ExtResource("1_ktvuy"), ExtResource("2_ittqd")])
 metadata/_custom_type_script = "uid://dxj03134avc2p"

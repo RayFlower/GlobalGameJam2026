@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="PuzzleResource" format=3 uid="uid://dkbsmwuk2h8sm"]
+
+[ext_resource type="Script" uid="uid://dxj03134avc2p" path="res://puzzle_resource.gd" id="1_6yqju"]
+
+[resource]
+script = ExtResource("1_6yqju")
+metadata/_custom_type_script = "uid://dxj03134avc2p"
