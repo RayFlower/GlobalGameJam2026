@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cqj2rek50my0d"]
+
+[ext_resource type="Script" uid="uid://rn3iu83c70g" path="res://intro_screen.gd" id="1_fmp77"]
+
+[node name="IntroScreen" type="Node2D" unique_id=686284399]
+script = ExtResource("1_fmp77")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=1342510750]
+offset_left = 347.0
+offset_top = 247.0
+offset_right = 1588.0
+offset_bottom = 411.0
+theme_override_font_sizes/normal_font_size = 96
+text = "Spypher"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start Button" type="Button" parent="." unique_id=1707609753]
+offset_left = 712.0
+offset_top = 722.0
+offset_right = 1254.0
+offset_bottom = 839.0
+theme_override_font_sizes/font_size = 48
+text = "Start Decrypting"
+
+[connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
