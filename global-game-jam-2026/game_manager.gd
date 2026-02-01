@@ -29,7 +29,7 @@ func load_pages(textures: Array[Texture2D]):
 
 	for page_texture in textures:
 		var new_draggable = draggable_scene.instantiate() as Draggable
-		new_draggable.initialize(page_texture)
+		new_draggable.initialize(page_texture, page_texture) #TODO this is a placeholder, replace with second sflipped texture
 		var random_x = randi_range(0,random_spawn_x)
 		var random_y = randi_range(0,random_spawn_y)
 		new_draggable.position = Vector2(random_x, random_y)

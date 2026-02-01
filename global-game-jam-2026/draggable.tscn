@@ -15,11 +15,22 @@ script = ExtResource("1_wks1n")
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 
-[node name="Texture" type="TextureRect" parent="." unique_id=832628890]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=421937365]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Texture" type="TextureRect" parent="HBoxContainer" unique_id=832628890]
 layout_mode = 2
 mouse_filter = 2
 texture = ExtResource("2_7tx1s")
 stretch_mode = 4
 
+[node name="FlipButton" type="Button" parent="HBoxContainer" unique_id=1810631323]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 30
+text = "Flip"
+
 [connection signal="button_down" from="DragButton" to="." method="_on_drag_button_button_down"]
 [connection signal="button_up" from="DragButton" to="." method="_on_drag_button_button_up"]
+[connection signal="pressed" from="HBoxContainer/FlipButton" to="." method="_on_flip_button_pressed"]
