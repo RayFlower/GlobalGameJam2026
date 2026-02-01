@@ -19,6 +19,9 @@ func initialize(new_main: Texture): #, new_flipped: Texture):
 	#flipped_texture = new_flipped
 	
 	is_cypher = main_texture.resource_path.contains("cypher") #Incredible hacks -bryan
+	var random_flip_chance = randi_range(0,100)
+	if is_cypher and random_flip_chance < 50:
+		_on_flip_button_pressed()
 	hide_flip_button()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
