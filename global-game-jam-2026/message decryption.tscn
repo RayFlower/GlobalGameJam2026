@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://x6lthg28srex"]
+[gd_scene format=3 uid="uid://br5xvluqqkgn6"]
 
 [ext_resource type="Script" uid="uid://cq8o18mysxij0" path="res://message_decryption.gd" id="1_c1ndw"]
 [ext_resource type="Texture2D" uid="uid://w6u05maj575x" path="res://sprites/Arrow.png" id="1_e6yom"]
@@ -233,6 +233,7 @@ offset_left = -133.0
 offset_top = -25.0
 offset_right = 174.0
 offset_bottom = 62.0
+theme_override_fonts/normal_font = ExtResource("2_c0gml")
 theme_override_font_sizes/normal_font_size = 36
 text = "Hewwo"
 horizontal_alignment = 1
