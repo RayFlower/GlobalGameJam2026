@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bh44l75vosadi"]
+
+[ext_resource type="Script" uid="uid://bo1w7k3tfq0dy" path="res://drag_panel_container.gd" id="1_wks1n"]
+[ext_resource type="Texture2D" uid="uid://ch7hyulwptfvm" path="res://sprites/Level0_note.png" id="2_7tx1s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_phrhr"]
+
+[node name="Draggable" type="PanelContainer" unique_id=1737315704]
+offset_right = 1279.0
+offset_bottom = 3300.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_phrhr")
+script = ExtResource("1_wks1n")
+
+[node name="DragButton" type="Button" parent="." unique_id=1804739701]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="Texture" type="TextureRect" parent="." unique_id=832628890]
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("2_7tx1s")
+stretch_mode = 4
+
+[connection signal="button_down" from="DragButton" to="." method="_on_drag_button_button_down"]
+[connection signal="button_up" from="DragButton" to="." method="_on_drag_button_button_up"]

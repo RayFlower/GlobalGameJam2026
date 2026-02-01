@@ -1,4 +1,4 @@
-[gd_resource type="Resource" format=3 uid="uid://bky3u5k34gknk"]
+[gd_resource type="Resource" script_class="PuzzleResource" format=3 uid="uid://bky3u5k34gknk"]
 
 [ext_resource type="Script" uid="uid://dxj03134avc2p" path="res://puzzle_resource.gd" id="1_jtsor"]
 

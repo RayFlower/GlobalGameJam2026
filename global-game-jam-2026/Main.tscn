@@ -3,15 +3,16 @@
 [ext_resource type="Script" uid="uid://b45k430sypim4" path="res://game_manager.gd" id="1_fos0i"]
 [ext_resource type="Texture2D" uid="uid://bf0kw1i40ta5p" path="res://sprites/greyBack.png" id="1_r0du0"]
 [ext_resource type="Resource" uid="uid://b52m7obvutlm0" path="res://puzzle_data/puzzle0.tres" id="2_3dxm6"]
+[ext_resource type="Script" uid="uid://dxj03134avc2p" path="res://puzzle_resource.gd" id="2_03owx"]
 [ext_resource type="Script" uid="uid://baldktaqjc5eb" path="res://draggable_area.gd" id="2_cm0pq"]
-[ext_resource type="PackedScene" uid="uid://bh44l75vosadi" path="res://page.tscn" id="2_uu6xs"]
 [ext_resource type="Resource" uid="uid://dcps887lnpp2o" path="res://puzzle_data/puzzle1.tres" id="3_lgr22"]
-[ext_resource type="PackedScene" uid="uid://bnfec2dsmvb65" path="res://cipher.tscn" id="3_r0du0"]
+[ext_resource type="PackedScene" path="res://message decryption.tscn" id="6_wkp8b"]
 
-[node name="Game" type="Node2D" unique_id=213973660 node_paths=PackedStringArray("draggable_area")]
+[node name="Game" type="Node2D" unique_id=213973660 node_paths=PackedStringArray("draggable_area", "message_decryption")]
 script = ExtResource("1_fos0i")
 draggable_area = NodePath("DraggableArea")
-puzzle_data = Array[Resource]([ExtResource("2_3dxm6"), ExtResource("3_lgr22")])
+puzzle_data = Array[ExtResource("2_03owx")]([ExtResource("2_3dxm6"), ExtResource("3_lgr22")])
+message_decryption = NodePath("MessageDecryption")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1550174734]
 offset_left = -45.0
@@ -20,32 +21,11 @@ offset_right = 1634.0
 offset_bottom = 934.0
 texture = ExtResource("1_r0du0")
 
+[node name="MessageDecryption" parent="." unique_id=1789110642 instance=ExtResource("6_wkp8b")]
+position = Vector2(1444, 0)
+
 [node name="DraggableArea" type="CanvasLayer" parent="." unique_id=56275216]
 script = ExtResource("2_cm0pq")
-
-[node name="Page1" parent="DraggableArea" unique_id=1737315704 instance=ExtResource("2_uu6xs")]
-offset_left = 85.0
-offset_top = 102.0
-offset_right = 485.0
-offset_bottom = 602.0
-
-[node name="Page2" parent="DraggableArea" unique_id=313814356 instance=ExtResource("2_uu6xs")]
-offset_left = 1246.0
-offset_top = 62.0
-offset_right = 1646.0
-offset_bottom = 562.0
-
-[node name="Cipher1" parent="DraggableArea" unique_id=1998514351 instance=ExtResource("3_r0du0")]
-offset_left = 534.0
-offset_top = 60.0
-offset_right = 934.0
-offset_bottom = 560.0
-
-[node name="Cipher2" parent="DraggableArea" unique_id=2050682235 instance=ExtResource("3_r0du0")]
-offset_left = 945.0
-offset_top = 397.0
-offset_right = 1345.0
-offset_bottom = 897.0
 
 [node name="BryanTestUI" type="CanvasLayer" parent="." unique_id=628016387]
 

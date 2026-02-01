@@ -1,3 +1,4 @@
+class_name MessageDecryption
 extends Node2D
 
 ## Object References
