@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dsfgegj3h1gbt"]
 
 [ext_resource type="Script" uid="uid://b45k430sypim4" path="res://game_manager.gd" id="1_fos0i"]
-[ext_resource type="Texture2D" uid="uid://bf0kw1i40ta5p" path="res://sprites/greyBack.png" id="1_r0du0"]
 [ext_resource type="Resource" uid="uid://b52m7obvutlm0" path="res://puzzle_data/puzzle0.tres" id="2_3dxm6"]
 [ext_resource type="Script" path="res://puzzle_resource.gd" id="2_03owx"]
 [ext_resource type="Script" uid="uid://baldktaqjc5eb" path="res://draggable_area.gd" id="2_cm0pq"]
@@ -10,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://benfixjrgk6nb" path="res://sprites/correct.png" id="6_20pc6"]
 [ext_resource type="PackedScene" uid="uid://br5xvluqqkgn6" path="res://message decryption.tscn" id="6_wkp8b"]
 [ext_resource type="Texture2D" uid="uid://hbj73b0uvrg0" path="res://sprites/wrong.png" id="7_5vvyt"]
+[ext_resource type="Texture2D" uid="uid://oo47n1ujy3o0" path="res://sprites/desktop.png" id="8_c6i3y"]
 [ext_resource type="AudioStream" uid="uid://bmmgasf40nvkk" path="res://music/Slowgo.wav" id="11_20pc6"]
 [ext_resource type="AudioStream" uid="uid://dhsj7d70ugyx2" path="res://SFX/successsfxspypher.wav" id="12_c6i3y"]
 [ext_resource type="AudioStream" uid="uid://doxsox24e20mg" path="res://SFX/failuresfxspypher.wav" id="13_c2ibq"]
@@ -22,15 +22,13 @@ message_decryption = NodePath("MessageDecryption")
 correct_ticket_texture = ExtResource("6_20pc6")
 wrong_ticket_texture = ExtResource("7_5vvyt")
 
-[node name="Background" type="TextureRect" parent="." unique_id=1550174734]
-offset_left = -45.0
-offset_top = -37.0
-offset_right = 1634.0
-offset_bottom = 934.0
-texture = ExtResource("1_r0du0")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1104587392]
+position = Vector2(960, 540)
+scale = Vector2(3, 3)
+texture = ExtResource("8_c6i3y")
 
 [node name="MessageDecryption" parent="." unique_id=1789110642 instance=ExtResource("6_wkp8b")]
-position = Vector2(1444, 0)
+position = Vector2(1331, 276)
 
 [node name="DraggableArea" type="CanvasLayer" parent="." unique_id=56275216]
 script = ExtResource("2_cm0pq")
