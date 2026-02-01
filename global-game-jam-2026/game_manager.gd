@@ -36,6 +36,11 @@ func load_pages(textures: Array[Texture2D]):
 
 func check_answer(is_correct: bool) -> void:
 	print("Answer is " + str(is_correct) + "!")
+	
+	var is_last_puzzle = current_puzzle_index == puzzle_data.size() - 1
+	if(is_last_puzzle):
+		is_correct = true
+
 	spawn_answer_result_ticket(is_correct)
 	if (is_correct):
 		Global.score += 1
