@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PuzzleResource" format=3 uid="uid://bvv7kyg0q70pn"]
+
+[ext_resource type="Texture2D" uid="uid://ddw4c0sb6qx78" path="res://sprites/Level3_cypher.png" id="1_1ju12"]
+[ext_resource type="Script" uid="uid://dxj03134avc2p" path="res://puzzle_resource.gd" id="1_skb1h"]
+[ext_resource type="Texture2D" uid="uid://7jvk37taxgqg" path="res://sprites/Level3_note.png" id="2_bf35e"]
+
+[resource]
+script = ExtResource("1_skb1h")
+all_comma_seperated_answer_texts = Array[String](["Attorney general, President, Prime Minister", "Grand Hotel, Airport, Embassy", "9PM, 12AM, 3PM"])
+page_textures = Array[Texture2D]([ExtResource("1_1ju12"), ExtResource("2_bf35e")])
+metadata/_custom_type_script = "uid://dxj03134avc2p"

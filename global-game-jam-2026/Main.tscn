@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://baldktaqjc5eb" path="res://draggable_area.gd" id="2_cm0pq"]
 [ext_resource type="Resource" uid="uid://dcps887lnpp2o" path="res://puzzle_data/puzzle1.tres" id="3_lgr22"]
 [ext_resource type="Resource" uid="uid://dkbsmwuk2h8sm" path="res://puzzle_data/puzzle2.tres" id="5_trn2v"]
+[ext_resource type="Resource" uid="uid://bvv7kyg0q70pn" path="res://puzzle_data/puzzle3.tres" id="6_5vvyt"]
 [ext_resource type="Texture2D" uid="uid://benfixjrgk6nb" path="res://sprites/correct.png" id="6_20pc6"]
 [ext_resource type="PackedScene" uid="uid://br5xvluqqkgn6" path="res://message decryption.tscn" id="6_wkp8b"]
 [ext_resource type="Texture2D" uid="uid://hbj73b0uvrg0" path="res://sprites/wrong.png" id="7_5vvyt"]
@@ -14,7 +15,7 @@
 [node name="Game" type="Node2D" unique_id=213973660 node_paths=PackedStringArray("draggable_area", "message_decryption")]
 script = ExtResource("1_fos0i")
 draggable_area = NodePath("DraggableArea")
-puzzle_data = Array[ExtResource("2_03owx")]([ExtResource("2_3dxm6"), ExtResource("3_lgr22"), ExtResource("5_trn2v")])
+puzzle_data = Array[ExtResource("2_03owx")]([ExtResource("2_3dxm6"), ExtResource("3_lgr22"), ExtResource("5_trn2v"), ExtResource("6_5vvyt")])
 message_decryption = NodePath("MessageDecryption")
 correct_ticket_texture = ExtResource("6_20pc6")
 wrong_ticket_texture = ExtResource("7_5vvyt")
