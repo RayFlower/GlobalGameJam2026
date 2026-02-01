@@ -204,3 +204,11 @@ theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxFlat_c1ndw")
 text = "Send"
 icon_alignment = 1
+
+[connection signal="pressed" from="Cipher Selection 1/Button Previous" to="." method="_on_cypher1_button_previous_pressed"]
+[connection signal="pressed" from="Cipher Selection 1/Button Next" to="." method="_on_cypher1_button_next_pressed"]
+[connection signal="pressed" from="Cipher Selection 2/Button Previous" to="." method="_on_cypher2_button_previous_pressed"]
+[connection signal="pressed" from="Cipher Selection 2/Button Next" to="." method="_on_cypher2_button_next_pressed"]
+[connection signal="pressed" from="Cipher Selection 3/Button Previous" to="." method="_on_cypher3_button_previous_pressed"]
+[connection signal="pressed" from="Cipher Selection 3/Button Next" to="." method="_on_cypher3_button_next_pressed"]
+[connection signal="pressed" from="Send Button" to="." method="_on_send_button_pressed"]
