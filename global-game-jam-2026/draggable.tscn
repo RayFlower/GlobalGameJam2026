@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://bh44l75vosadi"]
 
 [ext_resource type="Script" uid="uid://bo1w7k3tfq0dy" path="res://drag_panel_container.gd" id="1_wks1n"]
-[ext_resource type="Texture2D" uid="uid://ch7hyulwptfvm" path="res://sprites/Level0_note.png" id="2_7tx1s"]
+[ext_resource type="Texture2D" uid="uid://benfixjrgk6nb" path="res://sprites/correct.png" id="2_u6fe1"]
 [ext_resource type="AudioStream" uid="uid://binmmnm2ihx32" path="res://SFX/papermovingsfx.wav" id="3_u6fe1"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_phrhr"]
 
 [node name="Draggable" type="PanelContainer" unique_id=1737315704]
-offset_right = 712.0
-offset_bottom = 531.0
+offset_right = 363.0
+offset_bottom = 200.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_phrhr")
 script = ExtResource("1_wks1n")
 
@@ -23,7 +23,7 @@ mouse_filter = 2
 [node name="Texture" type="TextureRect" parent="HBoxContainer" unique_id=832628890]
 layout_mode = 2
 mouse_filter = 2
-texture = ExtResource("2_7tx1s")
+texture = ExtResource("2_u6fe1")
 stretch_mode = 4
 
 [node name="FlipButton" type="Button" parent="HBoxContainer" unique_id=1810631323]
