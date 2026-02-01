@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PuzzleResource" format=3 uid="uid://cku5vpo3v6s6h"]
+
+[ext_resource type="Texture2D" uid="uid://dgooirylkqryc" path="res://sprites/Level4_cypher.png" id="1_1b1g2"]
+[ext_resource type="Script" uid="uid://dxj03134avc2p" path="res://puzzle_resource.gd" id="1_6eggq"]
+[ext_resource type="Texture2D" uid="uid://ciq58rjro4j6t" path="res://sprites/Level4_note.png" id="2_focjg"]
+
+[resource]
+script = ExtResource("1_6eggq")
+all_comma_seperated_answer_texts = Array[String](["WMDs, Bioweapon, Pipe bomb", "parking lot, office building, park", "today, tomorrow, sunday"])
+page_textures = Array[Texture2D]([ExtResource("1_1b1g2"), ExtResource("2_focjg")])
+metadata/_custom_type_script = "uid://dxj03134avc2p"
