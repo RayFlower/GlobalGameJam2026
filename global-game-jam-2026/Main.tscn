@@ -14,11 +14,12 @@
 [ext_resource type="AudioStream" uid="uid://bmmgasf40nvkk" path="res://music/Slowgo.wav" id="11_20pc6"]
 [ext_resource type="AudioStream" uid="uid://dhsj7d70ugyx2" path="res://SFX/successsfxspypher.wav" id="12_c6i3y"]
 [ext_resource type="AudioStream" uid="uid://doxsox24e20mg" path="res://SFX/failuresfxspypher.wav" id="13_c2ibq"]
+[ext_resource type="Resource" uid="uid://cku5vpo3v6s6h" path="res://puzzle_data/puzzle4.tres" id="7_c6i3y"]
 
 [node name="Game" type="Node2D" unique_id=213973660 node_paths=PackedStringArray("draggable_area", "message_decryption")]
 script = ExtResource("1_fos0i")
 draggable_area = NodePath("DraggableArea")
-puzzle_data = Array[ExtResource("2_03owx")]([ExtResource("2_3dxm6"), ExtResource("3_lgr22"), ExtResource("5_trn2v"), ExtResource("6_5vvyt")])
+puzzle_data = Array[ExtResource("2_03owx")]([ExtResource("2_3dxm6"), ExtResource("3_lgr22"), ExtResource("5_trn2v"), ExtResource("6_5vvyt"), ExtResource("7_c6i3y")])
 message_decryption = NodePath("MessageDecryption")
 correct_ticket_texture = ExtResource("6_20pc6")
 wrong_ticket_texture = ExtResource("7_5vvyt")
