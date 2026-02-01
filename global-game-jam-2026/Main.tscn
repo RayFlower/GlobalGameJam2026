@@ -28,6 +28,7 @@ position = Vector2(1444, 0)
 script = ExtResource("2_cm0pq")
 
 [node name="BryanTestUI" type="CanvasLayer" parent="." unique_id=628016387]
+visible = false
 
 [node name="AnswerCorrectDebugButton" type="Button" parent="BryanTestUI" unique_id=268684266]
 anchors_preset = 6
