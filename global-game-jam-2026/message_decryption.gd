@@ -61,41 +61,49 @@ func assign_cipher_data(all_answers_texts: Array[String]) -> void:
 ## --- BUTTON SIGNALS --------------------------------------
 
 func _on_cypher1_button_previous_pressed() -> void:
+	$"Click SFX".play()
 	cipher_1_index = ((cipher_1_index - 1) + cipher_1_answer_list.size()) % cipher_1_answer_list.size()
 	CipherText_1_text.text = cipher_1_answer_list[cipher_1_index]
 	pass # Replace with function body.
 	
 func _on_cypher1_button_next_pressed() -> void:
+	$"Click SFX".play()
 	cipher_1_index = (cipher_1_index + 1) % cipher_1_answer_list.size()
 	CipherText_1_text.text = cipher_1_answer_list[cipher_1_index]
 	pass # Replace with function body.
 
 func _on_cypher2_button_previous_pressed() -> void:
+	$"Click SFX".play()
 	cipher_2_index = ((cipher_2_index - 1) + cipher_2_answer_list.size()) % cipher_2_answer_list.size()
 	CipherText_2_text.text = cipher_2_answer_list[cipher_2_index]
 	pass # Replace with function body.
 	
 func _on_cypher2_button_next_pressed() -> void:
+	$"Click SFX".play()
 	cipher_2_index = (cipher_2_index + 1) % cipher_2_answer_list.size()
 	CipherText_2_text.text = cipher_2_answer_list[cipher_2_index]
 	pass # Replace with function body.
 
 func _on_cypher3_button_previous_pressed() -> void:
+	$"Click SFX".play()
 	cipher_3_index = ((cipher_3_index - 1) + cipher_3_answer_list.size()) % cipher_3_answer_list.size()
 	CipherText_3_text.text = cipher_3_answer_list[cipher_3_index]
 	pass # Replace with function body.
 	
 func _on_cypher3_button_next_pressed() -> void:
+	$"Click SFX".play()
 	cipher_3_index = (cipher_3_index + 1) % cipher_3_answer_list.size()
 	CipherText_3_text.text = cipher_3_answer_list[cipher_3_index]
 	pass # Replace with function body.
 	
 func _on_cypher4_button_previous_pressed() -> void:
+	$"Click SFX".play()
 	cipher_4_index = ((cipher_4_index - 1) + cipher_4_answer_list.size()) % cipher_4_answer_list.size()
 	CipherText_4_text.text = cipher_4_answer_list[cipher_4_index]
 	pass # Replace with function body.
 	
 func _on_cypher4_button_next_pressed() -> void:
+	$"Click SFX".play()
 	cipher_4_index = (cipher_4_index + 1) % cipher_4_answer_list.size()
 	CipherText_4_text.text = cipher_4_answer_list[cipher_4_index]
 	pass # Replace with function body.

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bo1w7k3tfq0dy" path="res://drag_panel_container.gd" id="1_wks1n"]
 [ext_resource type="Texture2D" uid="uid://ch7hyulwptfvm" path="res://sprites/Level0_note.png" id="2_7tx1s"]
+[ext_resource type="AudioStream" uid="uid://binmmnm2ihx32" path="res://SFX/papermovingsfx.wav" id="3_u6fe1"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_phrhr"]
 
@@ -30,6 +31,9 @@ layout_mode = 2
 size_flags_vertical = 4
 theme_override_font_sizes/font_size = 30
 text = "Flip"
+
+[node name="Paper SFX" type="AudioStreamPlayer" parent="." unique_id=1834613857]
+stream = ExtResource("3_u6fe1")
 
 [connection signal="button_down" from="DragButton" to="." method="_on_drag_button_button_down"]
 [connection signal="button_up" from="DragButton" to="." method="_on_drag_button_button_up"]

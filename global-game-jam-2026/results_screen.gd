@@ -28,5 +28,6 @@ func set_result_stat() -> void:
 func _on_retry_button_pressed() -> void:
 	# Restart the game
 	Global.score = 0
+	$"Click SFX".play()
 	get_tree().change_scene_to_file("res://Main.tscn")
 	pass # Replace with function body.

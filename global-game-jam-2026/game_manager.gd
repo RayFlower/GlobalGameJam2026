@@ -39,6 +39,10 @@ func check_answer(is_correct: bool) -> void:
 	spawn_answer_result_ticket(is_correct)
 	if (is_correct):
 		Global.score += 1
+		$"Success SFX".play()
+	else:
+		$"Fail SFX".play()
+		pass
 	
 	current_puzzle_index += 1
 	if current_puzzle_index < puzzle_data.size():

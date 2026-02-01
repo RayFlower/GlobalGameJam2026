@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://rn3iu83c70g" path="res://intro_screen.gd" id="1_fmp77"]
 [ext_resource type="FontFile" uid="uid://cuoopbmw7k53t" path="res://Fonts/moms_typewriter/Mom«t___.ttf" id="2_t3076"]
 [ext_resource type="FontFile" uid="uid://btyoule5c6fw3" path="res://Fonts/oldnewspapertypes/OldNewspaperTypes.ttf" id="3_yrerf"]
+[ext_resource type="AudioStream" uid="uid://h0jeoqdqbie" path="res://music/hauntedorganbackground.wav" id="4_yrerf"]
+[ext_resource type="AudioStream" uid="uid://j8s130n7bejc" path="res://SFX/soclicky.wav" id="5_augpl"]
 
 [node name="IntroScreen" type="Node2D" unique_id=686284399]
 script = ExtResource("1_fmp77")
@@ -26,5 +28,13 @@ offset_bottom = 839.0
 theme_override_fonts/font = ExtResource("3_yrerf")
 theme_override_font_sizes/font_size = 48
 text = "Start Decrypting"
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=1066946367]
+stream = ExtResource("4_yrerf")
+volume_db = -14.5
+autoplay = true
+
+[node name="Click SFX" type="AudioStreamPlayer" parent="." unique_id=682411894]
+stream = ExtResource("5_augpl")
 
 [connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]

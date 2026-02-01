@@ -3,13 +3,16 @@
 [ext_resource type="Script" uid="uid://b45k430sypim4" path="res://game_manager.gd" id="1_fos0i"]
 [ext_resource type="Texture2D" uid="uid://bf0kw1i40ta5p" path="res://sprites/greyBack.png" id="1_r0du0"]
 [ext_resource type="Resource" uid="uid://b52m7obvutlm0" path="res://puzzle_data/puzzle0.tres" id="2_3dxm6"]
-[ext_resource type="Script" uid="uid://dxj03134avc2p" path="res://puzzle_resource.gd" id="2_03owx"]
+[ext_resource type="Script" path="res://puzzle_resource.gd" id="2_03owx"]
 [ext_resource type="Script" uid="uid://baldktaqjc5eb" path="res://draggable_area.gd" id="2_cm0pq"]
 [ext_resource type="Resource" uid="uid://dcps887lnpp2o" path="res://puzzle_data/puzzle1.tres" id="3_lgr22"]
 [ext_resource type="Resource" uid="uid://dkbsmwuk2h8sm" path="res://puzzle_data/puzzle2.tres" id="5_trn2v"]
 [ext_resource type="Texture2D" uid="uid://benfixjrgk6nb" path="res://sprites/correct.png" id="6_20pc6"]
 [ext_resource type="PackedScene" uid="uid://br5xvluqqkgn6" path="res://message decryption.tscn" id="6_wkp8b"]
 [ext_resource type="Texture2D" uid="uid://hbj73b0uvrg0" path="res://sprites/wrong.png" id="7_5vvyt"]
+[ext_resource type="AudioStream" uid="uid://bmmgasf40nvkk" path="res://music/Slowgo.wav" id="11_20pc6"]
+[ext_resource type="AudioStream" uid="uid://dhsj7d70ugyx2" path="res://SFX/successsfxspypher.wav" id="12_c6i3y"]
+[ext_resource type="AudioStream" uid="uid://doxsox24e20mg" path="res://SFX/failuresfxspypher.wav" id="13_c2ibq"]
 
 [node name="Game" type="Node2D" unique_id=213973660 node_paths=PackedStringArray("draggable_area", "message_decryption")]
 script = ExtResource("1_fos0i")
@@ -49,5 +52,16 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 24
 text = "Answer 1 correctly!
 "
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=826618306]
+stream = ExtResource("11_20pc6")
+volume_db = -5.0
+autoplay = true
+
+[node name="Success SFX" type="AudioStreamPlayer" parent="." unique_id=2080856437]
+stream = ExtResource("12_c6i3y")
+
+[node name="Fail SFX" type="AudioStreamPlayer" parent="." unique_id=633738062]
+stream = ExtResource("13_c2ibq")
 
 [connection signal="button_down" from="BryanTestUI/AnswerCorrectDebugButton" to="." method="_on_answer_correct_debug_button_down"]

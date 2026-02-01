@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://yjtdmn5k72cj" path="res://results_screen.gd" id="1_j2iwf"]
 [ext_resource type="FontFile" uid="uid://cuoopbmw7k53t" path="res://Fonts/moms_typewriter/Mom«t___.ttf" id="2_12hod"]
 [ext_resource type="FontFile" uid="uid://btyoule5c6fw3" path="res://Fonts/oldnewspapertypes/OldNewspaperTypes.ttf" id="3_ck6jj"]
+[ext_resource type="AudioStream" uid="uid://h0jeoqdqbie" path="res://music/hauntedorganbackground.wav" id="4_ck6jj"]
+[ext_resource type="AudioStream" uid="uid://j8s130n7bejc" path="res://SFX/soclicky.wav" id="5_divvn"]
 
 [node name="ResultsScreen" type="Node2D" unique_id=686284399]
 script = ExtResource("1_j2iwf")
@@ -48,5 +50,13 @@ offset_bottom = 976.0
 theme_override_fonts/font = ExtResource("3_ck6jj")
 theme_override_font_sizes/font_size = 48
 text = "Go back in time"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2002093593]
+stream = ExtResource("4_ck6jj")
+volume_db = -14.5
+autoplay = true
+
+[node name="Click SFX" type="AudioStreamPlayer" parent="." unique_id=2072027678]
+stream = ExtResource("5_divvn")
 
 [connection signal="pressed" from="Retry Button" to="." method="_on_retry_button_pressed"]

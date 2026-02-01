@@ -38,9 +38,11 @@ func _on_drag_button_button_down() -> void:
 	if is_cypher:
 		flip_button.visible = true;
 	on_drag_start.emit(self)
+	$"Paper SFX".play()
 
 func _on_drag_button_button_up() -> void:
 	button_pressed = false
+	$"Paper SFX".play()
 
 func _on_flip_button_pressed() -> void:
 	if is_cypher:
@@ -50,3 +52,5 @@ func _on_flip_button_pressed() -> void:
 			$HBoxContainer/Texture.texture = main_texture
 		else:
 			$HBoxContainer/Texture.texture = flipped_texture
+	
+	$"Paper SFX".play()
