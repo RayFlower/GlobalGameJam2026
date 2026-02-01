@@ -5,7 +5,18 @@
 [ext_resource type="Texture2D" uid="uid://csjxlf7cifcyg" path="res://sprites/end screen.png" id="2_caqp2"]
 [ext_resource type="FontFile" uid="uid://btyoule5c6fw3" path="res://Fonts/oldnewspapertypes/OldNewspaperTypes.ttf" id="3_ck6jj"]
 [ext_resource type="AudioStream" uid="uid://h0jeoqdqbie" path="res://music/hauntedorganbackground.wav" id="4_ck6jj"]
+[ext_resource type="Texture2D" uid="uid://7udsupwvnr7h" path="res://sprites/cm_buton_send_up.png" id="5_0g0dq"]
 [ext_resource type="AudioStream" uid="uid://j8s130n7bejc" path="res://SFX/soclicky.wav" id="5_divvn"]
+[ext_resource type="Texture2D" uid="uid://bx8rrvqcejgsp" path="res://sprites/cm_buton_send_down.png" id="6_qdhix"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0m2qs"]
+texture = ExtResource("5_0g0dq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sf4rr"]
+texture = ExtResource("6_qdhix")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ehhj6"]
+texture = ExtResource("5_0g0dq")
 
 [node name="ResultsScreen" type="Node2D" unique_id=686284399]
 script = ExtResource("1_j2iwf")
@@ -15,10 +26,10 @@ position = Vector2(960, 540)
 texture = ExtResource("2_caqp2")
 
 [node name="result stat" type="RichTextLabel" parent="." unique_id=1855054546]
-offset_left = 42.0
-offset_top = 532.0
-offset_right = 1283.0
-offset_bottom = 696.0
+offset_left = 40.0
+offset_top = 872.0
+offset_right = 459.0
+offset_bottom = 1036.0
 theme_override_fonts/normal_font = ExtResource("2_12hod")
 theme_override_font_sizes/normal_font_size = 96
 text = "0 / 5"
@@ -26,12 +37,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Retry Button" type="Button" parent="." unique_id=1707609753]
-offset_left = 712.0
-offset_top = 859.0
-offset_right = 1254.0
-offset_bottom = 976.0
+offset_left = 514.0
+offset_top = 900.0
+offset_right = 1056.0
+offset_bottom = 1017.0
+theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.14901961, 1)
+theme_override_colors/font_pressed_color = Color(0.16078432, 0.16078432, 0.14901961, 1)
+theme_override_colors/font_hover_color = Color(0.16078432, 0.16078432, 0.14901961, 1)
 theme_override_fonts/font = ExtResource("3_ck6jj")
 theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_0m2qs")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sf4rr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ehhj6")
 text = "Go back in time"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2002093593]
