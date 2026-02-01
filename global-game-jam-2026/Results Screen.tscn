@@ -1,15 +1,18 @@
 [gd_scene format=3 uid="uid://b1v5e6ycg22mj"]
 
 [ext_resource type="Script" uid="uid://yjtdmn5k72cj" path="res://results_screen.gd" id="1_j2iwf"]
+[ext_resource type="FontFile" uid="uid://cuoopbmw7k53t" path="res://Fonts/moms_typewriter/Mom«t___.ttf" id="2_12hod"]
+[ext_resource type="FontFile" uid="uid://btyoule5c6fw3" path="res://Fonts/oldnewspapertypes/OldNewspaperTypes.ttf" id="3_ck6jj"]
 
 [node name="ResultsScreen" type="Node2D" unique_id=686284399]
 script = ExtResource("1_j2iwf")
 
 [node name="You Intercepted" type="RichTextLabel" parent="." unique_id=1342510750]
 offset_left = 347.0
-offset_top = 190.0
+offset_top = 105.0
 offset_right = 1588.0
-offset_bottom = 354.0
+offset_bottom = 269.0
+theme_override_fonts/normal_font = ExtResource("2_12hod")
 theme_override_font_sizes/normal_font_size = 96
 text = "You helped to stop"
 horizontal_alignment = 1
@@ -17,9 +20,10 @@ vertical_alignment = 1
 
 [node name="result stat" type="RichTextLabel" parent="." unique_id=1855054546]
 offset_left = 347.0
-offset_top = 326.0
+offset_top = 241.0
 offset_right = 1588.0
-offset_bottom = 490.0
+offset_bottom = 405.0
+theme_override_fonts/normal_font = ExtResource("2_12hod")
 theme_override_font_sizes/normal_font_size = 96
 text = "0 / 5"
 horizontal_alignment = 1
@@ -27,9 +31,10 @@ vertical_alignment = 1
 
 [node name="disasters" type="RichTextLabel" parent="." unique_id=1889526317]
 offset_left = 347.0
-offset_top = 441.0
+offset_top = 356.0
 offset_right = 1588.0
-offset_bottom = 894.0
+offset_bottom = 869.0
+theme_override_fonts/normal_font = ExtResource("2_12hod")
 theme_override_font_sizes/normal_font_size = 96
 text = "disasters from happening.
 congratulations or sorry that happened"
@@ -37,9 +42,10 @@ horizontal_alignment = 1
 
 [node name="Retry Button" type="Button" parent="." unique_id=1707609753]
 offset_left = 712.0
-offset_top = 899.0
+offset_top = 859.0
 offset_right = 1254.0
-offset_bottom = 1016.0
+offset_bottom = 976.0
+theme_override_fonts/font = ExtResource("3_ck6jj")
 theme_override_font_sizes/font_size = 48
 text = "Go back in time"
 
