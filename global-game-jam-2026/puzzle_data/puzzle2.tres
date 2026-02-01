@@ -1,7 +1,11 @@
 [gd_resource type="Resource" script_class="PuzzleResource" format=3 uid="uid://dkbsmwuk2h8sm"]
 
 [ext_resource type="Script" uid="uid://dxj03134avc2p" path="res://puzzle_resource.gd" id="1_6yqju"]
+[ext_resource type="Texture2D" uid="uid://dwbn0l8u5asub" path="res://sprites/Level2_cypher.png" id="1_kajks"]
+[ext_resource type="Texture2D" uid="uid://dvv0kygq6gqr7" path="res://sprites/Level2_note.png" id="2_p5lqr"]
 
 [resource]
 script = ExtResource("1_6yqju")
+all_comma_seperated_answer_texts = Array[String](["submarine, airplane, truck", "55N, 19N, 25S", "115W, 83W, 40E"])
+page_textures = Array[Texture2D]([ExtResource("1_kajks"), ExtResource("2_p5lqr")])
 metadata/_custom_type_script = "uid://dxj03134avc2p"
