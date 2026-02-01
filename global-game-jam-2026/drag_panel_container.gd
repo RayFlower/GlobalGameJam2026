@@ -13,10 +13,10 @@ var is_cypher = false
 
 signal on_drag_start
 
-func initialize(new_main: Texture, new_flipped: Texture):
+func initialize(new_main: Texture): #, new_flipped: Texture):
 	main_texture = new_main
 	$HBoxContainer/Texture.texture = main_texture
-	flipped_texture = new_flipped
+	#flipped_texture = new_flipped
 	
 	is_cypher = main_texture.resource_path.contains("cypher") #Incredible hacks -bryan
 	hide_flip_button()
