@@ -17,13 +17,8 @@ func _process(delta: float) -> void:
 ## --- Functions --------------------------------------------
 
 func set_result_stat() -> void:
-	
-	# Get stats
-	var _solved_cyphers = 0
-	var _total_cyphers = 99
-	
 	# set text to display
-	result_stat.text = str(_solved_cyphers) + " / " + str(_total_cyphers)
+	result_stat.text = str(Global.score) + " / " + str(Global.total_puzzles)
 	pass
 
 
@@ -32,5 +27,6 @@ func set_result_stat() -> void:
 
 func _on_retry_button_pressed() -> void:
 	# Restart the game
+	Global.score = 0
 	get_tree().change_scene_to_file("res://Main.tscn")
 	pass # Replace with function body.

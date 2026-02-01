@@ -108,7 +108,11 @@ func _on_send_button_pressed() -> void:
 		var is_correct = cipher_text.text == current_correct_answers[answer_index]
 		if not is_correct:
 			send_answers.emit(false)
+			# exit the function
+			return
+		
 		answer_index += 1
 		if answer_index >= current_active_cipher_list_count:
 			break
+	
 	send_answers.emit(true)
