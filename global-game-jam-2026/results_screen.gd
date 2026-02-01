@@ -32,6 +32,5 @@ func set_result_stat() -> void:
 
 func _on_retry_button_pressed() -> void:
 	# Restart the game
-	
-	
+	get_tree().change_scene_to_file("res://Main.tscn")
 	pass # Replace with function body.
