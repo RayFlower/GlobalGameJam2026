@@ -22,6 +22,9 @@ var cipher_4_answer_list = []
 
 var all_cipher_lists = [cipher_1_answer_list,cipher_2_answer_list,cipher_3_answer_list,cipher_4_answer_list]
 var current_correct_answers = ["","","",""]
+var current_active_cipher_list_count = 0
+
+signal send_answers
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -53,7 +56,7 @@ func assign_cipher_data(all_answers_texts: Array[String]) -> void:
 		all_cipher_texts[current_index].text = answers_split[0]
 		
 		current_index += 1
-	
+	current_active_cipher_list_count = current_index
 
 ## --- BUTTON SIGNALS --------------------------------------
 
@@ -100,4 +103,12 @@ func _on_cypher4_button_next_pressed() -> void:
 func _on_send_button_pressed() -> void:
 	## Submit answer to game manager
 	
-	pass # Replace with function body.
+	var answer_index = 0
+	for cipher_text in all_cipher_texts:
+		var is_correct = cipher_text.text == current_correct_answers[answer_index]
+		if not is_correct:
+			send_answers.emit(false)
+		answer_index += 1
+		if answer_index >= current_active_cipher_list_count:
+			break
+	send_answers.emit(true)

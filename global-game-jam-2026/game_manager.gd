@@ -11,6 +11,7 @@ var draggable_scene = load("res://draggable.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	message_decryption.send_answers.connect(check_answer)
 	load_puzzle(0)
 	
 func load_puzzle(index: int):
@@ -28,9 +29,16 @@ func load_pages(textures: Array[Texture2D]):
 		#TODO set random position
 		draggable_area.add_new_draggable(new_draggable)
 
-func on_correct_answer() -> void:
+func check_answer(is_correct: bool) -> void:
+	print(is_correct) #TODO track score!
 	current_puzzle_index += 1
-	load_puzzle(current_puzzle_index)
+	if current_puzzle_index < puzzle_data.size():
+		load_puzzle(current_puzzle_index)
+	else:
+		game_end()
+		
+func game_end() -> void:
+	print("Game over!")
 	
 func _on_answer_correct_debug_button_down() -> void:
-	on_correct_answer()
+	check_answer(true)
