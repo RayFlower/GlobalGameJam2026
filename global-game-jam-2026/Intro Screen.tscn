@@ -1,32 +1,43 @@
 [gd_scene format=3 uid="uid://cqj2rek50my0d"]
 
 [ext_resource type="Script" uid="uid://rn3iu83c70g" path="res://intro_screen.gd" id="1_fmp77"]
-[ext_resource type="FontFile" uid="uid://cuoopbmw7k53t" path="res://Fonts/moms_typewriter/Mom«t___.ttf" id="2_t3076"]
+[ext_resource type="Texture2D" uid="uid://bh53b6hnrk836" path="res://sprites/main menu BG.png" id="2_0nf3h"]
 [ext_resource type="FontFile" uid="uid://btyoule5c6fw3" path="res://Fonts/oldnewspapertypes/OldNewspaperTypes.ttf" id="3_yrerf"]
+[ext_resource type="Texture2D" uid="uid://7udsupwvnr7h" path="res://sprites/cm_buton_send_up.png" id="4_2s5ah"]
 [ext_resource type="AudioStream" uid="uid://h0jeoqdqbie" path="res://music/hauntedorganbackground.wav" id="4_yrerf"]
+[ext_resource type="Texture2D" uid="uid://bx8rrvqcejgsp" path="res://sprites/cm_buton_send_down.png" id="5_14ilc"]
 [ext_resource type="AudioStream" uid="uid://j8s130n7bejc" path="res://SFX/soclicky.wav" id="5_augpl"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ld8v0"]
+texture = ExtResource("4_2s5ah")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x3ofx"]
+texture = ExtResource("5_14ilc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_315we"]
+texture = ExtResource("4_2s5ah")
+
 [node name="IntroScreen" type="Node2D" unique_id=686284399]
+texture_filter = 1
 script = ExtResource("1_fmp77")
 
-[node name="Title" type="RichTextLabel" parent="." unique_id=1342510750]
-offset_left = 347.0
-offset_top = 247.0
-offset_right = 1588.0
-offset_bottom = 411.0
-theme_override_fonts/normal_font = ExtResource("2_t3076")
-theme_override_font_sizes/normal_font_size = 96
-text = "Spypher"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1190375799]
+position = Vector2(960, 540)
+texture = ExtResource("2_0nf3h")
 
 [node name="Start Button" type="Button" parent="." unique_id=1707609753]
-offset_left = 712.0
-offset_top = 722.0
-offset_right = 1254.0
-offset_bottom = 839.0
+offset_left = 1268.0
+offset_top = 879.0
+offset_right = 1810.0
+offset_bottom = 996.0
+theme_override_colors/font_color = Color(0.21176471, 0.19215687, 0.18039216, 1)
+theme_override_colors/font_pressed_color = Color(0.21176471, 0.19215687, 0.18039216, 1)
+theme_override_colors/font_hover_color = Color(0.21176471, 0.19215687, 0.18039216, 1)
 theme_override_fonts/font = ExtResource("3_yrerf")
 theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_ld8v0")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_x3ofx")
+theme_override_styles/hover = SubResource("StyleBoxTexture_315we")
 text = "Start Decrypting"
 
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=1066946367]
