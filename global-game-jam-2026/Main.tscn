@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://dxj03134avc2p" path="res://puzzle_resource.gd" id="2_03owx"]
 [ext_resource type="Script" uid="uid://baldktaqjc5eb" path="res://draggable_area.gd" id="2_cm0pq"]
 [ext_resource type="Resource" uid="uid://dcps887lnpp2o" path="res://puzzle_data/puzzle1.tres" id="3_lgr22"]
-[ext_resource type="PackedScene" path="res://message decryption.tscn" id="6_wkp8b"]
+[ext_resource type="PackedScene" uid="uid://x6lthg28srex" path="res://message decryption.tscn" id="6_wkp8b"]
 
 [node name="Game" type="Node2D" unique_id=213973660 node_paths=PackedStringArray("draggable_area", "message_decryption")]
 script = ExtResource("1_fos0i")

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://br5xvluqqkgn6"]
+[gd_scene format=3 uid="uid://x6lthg28srex"]
 
 [ext_resource type="Script" uid="uid://cq8o18mysxij0" path="res://message_decryption.gd" id="1_c1ndw"]
 [ext_resource type="Texture2D" uid="uid://w6u05maj575x" path="res://sprites/Arrow.png" id="1_e6yom"]
@@ -22,9 +22,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 220.0
-offset_top = 585.0
+offset_top = 799.0
 offset_right = 260.0
-offset_bottom = 625.0
+offset_bottom = 839.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -82,9 +82,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 220.0
-offset_top = 693.0
+offset_top = 694.0
 offset_right = 260.0
-offset_bottom = 733.0
+offset_bottom = 734.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -142,9 +142,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 220.0
-offset_top = 800.0
+offset_top = 591.0
 offset_right = 260.0
-offset_bottom = 840.0
+offset_bottom = 631.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -194,11 +194,71 @@ scale = Vector2(-0.3, 0.3)
 icon = ExtResource("1_e6yom")
 icon_alignment = 1
 
+[node name="Cipher Selection 4" type="Control" parent="." unique_id=1777470460]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 222.0
+offset_top = 484.0
+offset_right = 262.0
+offset_bottom = 524.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Cipher Selection 4" unique_id=517945185]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.5
+offset_top = -47.0
+offset_right = 160.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.52156866, 0.6627451, 1)
+
+[node name="Cipher Text" type="RichTextLabel" parent="Cipher Selection 4" unique_id=663742029]
+layout_mode = 0
+offset_left = -133.0
+offset_top = -25.0
+offset_right = 174.0
+offset_bottom = 62.0
+theme_override_font_sizes/normal_font_size = 36
+text = "Hewwo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button Previous" type="Button" parent="Cipher Selection 4" unique_id=838872353]
+layout_mode = 0
+offset_left = -206.0
+offset_top = -12.0
+offset_right = 2.0
+offset_bottom = 196.0
+scale = Vector2(0.3, 0.3)
+icon = ExtResource("1_e6yom")
+icon_alignment = 1
+
+[node name="Button Next" type="Button" parent="Cipher Selection 4" unique_id=1184439640]
+layout_mode = 0
+offset_left = 248.0
+offset_top = -12.0
+offset_right = 456.0
+offset_bottom = 196.0
+scale = Vector2(-0.3, 0.3)
+icon = ExtResource("1_e6yom")
+icon_alignment = 1
+
 [node name="Send Button" type="Button" parent="." unique_id=765304787]
-offset_left = 79.0
-offset_top = 939.0
-offset_right = 400.0
-offset_bottom = 1033.0
+offset_left = 85.0
+offset_top = 901.0
+offset_right = 406.0
+offset_bottom = 995.0
 theme_override_colors/font_color = Color(0, 0.13725491, 0.14117648, 1)
 theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxFlat_c1ndw")
@@ -211,4 +271,6 @@ icon_alignment = 1
 [connection signal="pressed" from="Cipher Selection 2/Button Next" to="." method="_on_cypher2_button_next_pressed"]
 [connection signal="pressed" from="Cipher Selection 3/Button Previous" to="." method="_on_cypher3_button_previous_pressed"]
 [connection signal="pressed" from="Cipher Selection 3/Button Next" to="." method="_on_cypher3_button_next_pressed"]
+[connection signal="pressed" from="Cipher Selection 4/Button Previous" to="." method="_on_cypher4_button_previous_pressed"]
+[connection signal="pressed" from="Cipher Selection 4/Button Next" to="." method="_on_cypher4_button_next_pressed"]
 [connection signal="pressed" from="Send Button" to="." method="_on_send_button_pressed"]
