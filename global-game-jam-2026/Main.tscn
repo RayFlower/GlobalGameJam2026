@@ -55,7 +55,7 @@ text = "Answer 1 correctly!
 
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=826618306]
 stream = ExtResource("11_20pc6")
-volume_db = -5.0
+volume_db = -4.0
 autoplay = true
 
 [node name="Success SFX" type="AudioStreamPlayer" parent="." unique_id=2080856437]

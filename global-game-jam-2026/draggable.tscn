@@ -34,6 +34,7 @@ text = "Flip"
 
 [node name="Paper SFX" type="AudioStreamPlayer" parent="." unique_id=1834613857]
 stream = ExtResource("3_u6fe1")
+volume_db = -15.0
 
 [connection signal="button_down" from="DragButton" to="." method="_on_drag_button_button_down"]
 [connection signal="button_up" from="DragButton" to="." method="_on_drag_button_button_up"]
