@@ -6,6 +6,6 @@
 
 [resource]
 script = ExtResource("1_6eggq")
-all_comma_seperated_answer_texts = Array[String](["WMDs, Bioweapon, Pipe bomb", "parking lot, office building, park", "today, tomorrow, sunday"])
+all_comma_seperated_answer_texts = Array[String](["run,WMDs, Bioweapon, Pipe bomb", "run, parking lot, office building, park", "run, today, tomorrow, sunday"])
 page_textures = Array[Texture2D]([ExtResource("1_1b1g2"), ExtResource("2_focjg")])
 metadata/_custom_type_script = "uid://dxj03134avc2p"
